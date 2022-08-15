@@ -1,0 +1,87 @@
+body{
+    padding: 20px;
+    background-image: url('Desktop\ -\ 1\ \(1\).png');
+    justify-content: center;
+    background-repeat: no-repeat;
+    --color-primary-dark:green;
+    background-size: cover;
+    align-items: center;
+}
+
+#login{
+    background-image:none;
+   
+}
+
+#left{
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    background-color: #3AB397;
+    padding-right: 200px;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+#right{
+    border-radius: 30px;
+    padding-left: 150px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 500px;
+    margin-right: 100px;
+    text-align: center;
+    
+}
+
+#right ul{
+    text-decoration: none;
+    display: inline;
+    justify-content: space-evenly;  
+}
+#right ul li{
+   display: inline;
+    
+}
+
+#sign{
+    position: absolute;
+    width: 261px;
+    height: 77px;
+   left:320px;
+   border: 2px solid #3AB397;
+    border-radius: 40px;
+    
+}
+
+#details{
+    color: gray;
+  
+}
+nav{
+    display: flex;
+}
+
+#no{
+   background-color: #F4F8F7;
+   padding-left:70px ;
+   border: none;
+   width: 200px;
+   height: 25px;
+}
+#login{
+    position: absolute;
+    width: 261px;
+    height: 77px;
+    border: 2px solid #3AAF9F;
+    border-radius: 40px;
+    align-items: center;
+    margin-left: -100px;
+}
+button:active{
+    transform: scale(0.98);
+}
+button:hover{
+background-color: var(--color-primary-dark);
+}

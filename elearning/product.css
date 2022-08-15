@@ -1,0 +1,59 @@
+body{
+   background-image: url(Desktop\ -\ 6.png);
+   background-repeat: no-repeat;
+ 
+}
+#product{
+    display: flex;
+}
+#description{
+    margin-top: 20px;
+    padding-left: 100px;
+    border-radius: 30px;
+    padding-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    width: 400px;
+    height:max-content;
+    justify-content: space-between;
+}
+#image{
+    padding-top: 100px;
+    margin-left: 100px;
+
+}
+#course{
+    background-color: gray;
+    width: 400px;
+    height: 100px;
+    border-radius: 30px;
+}
+#left{
+    margin-left: 20px;
+}
+#details{
+    background-color: gray;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+}
+#enroll button{
+   background-color: green;
+   border-radius: 30px;
+   margin-bottom: 50px;
+   margin-left: 100px;
+}
+#enroll{
+    display: flex;
+    background-color: blueviolet;
+    padding-top: 30px;
+    border-radius: 30px;
+    height: max-content;
+}
+#price{
+    margin-left: 100px;
+    background-color: green;
+    margin-bottom: 100px;
+}
