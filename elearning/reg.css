@@ -1,0 +1,204 @@
+.responsive1{
+    background-image: url("images/Desktop\ -\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}   
+.border-container{
+    height: auto;
+    justify-content: center;
+    margin: 30px 30px 30px 30px;
+    min-height: 630px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    display: flex;
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    .border-container {
+        display:inline-grid;      
+    }
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .top-row > div:last-child {
+    margin: 0;
+  }
+  
+  .button {
+    background: white;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 30px;     
+    text-align: center;
+    box-sizing: border-box;
+    border-color: var(--color-primary);
+    min-width:120px;
+    min-height: 40px;
+    outline-color: #dddddd;
+    color: var(--color-primary);
+    transition: background 0.2s, border-color 0.2s;
+    outline: #eeeeee;
+  }
+  .button:hover{
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+.button:active{
+    transform: scale(0.98);
+}
+  
+
+  
+
+body{
+    --color-primary:#3AB397;
+    --color-primary-dark:#1B9478;
+    --color-secondary:#F4F8F7;
+    --color-secondary-dark:#dddddd;
+    --color-trinary:#81928D;
+    --border-radius:4px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h2{
+    margin-block-start: 0;
+    margin-block-end: 20px;
+    color: #3AB397;
+    font-size: xx-large;
+}
+h6{
+    margin-top: 6px;
+    font-size: large;
+    color:var(--color-trinary)
+}
+
+.scrollingimg{
+    max-height: fit-content;
+    width:fit-content;
+    margin: 0px;
+    height: 670px;
+    display: flex;
+    align-content: flex-start;
+
+    
+}
+.logincontainer{
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+    width: auto;
+    height: auto;
+}
+.loginform{
+    text-align: center;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+.form{
+
+    justify-content: space-between;
+    background-color: white;
+    
+}
+.input-group{
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+ul{
+    display: block;
+    list-style: none;
+    margin-top:30px;
+
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.button1{
+    background: white;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-radius: 30px;     
+    text-align: center;
+    box-sizing: border-box;
+    border-color: var(--color-primary);
+    min-width:120px;
+    min-height: 40px;
+    outline-color: #dddddd;
+    color: var(--color-primary);
+    transition: background 0.2s, border-color 0.2s;
+    outline: #eeeeee;
+}
+.button1:hover{
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+.button1:active{
+    transform: scale(0.98);
+}
+.Form_input{
+    background: var(--color-secondary);
+    outline-color: white;
+    padding: 0.75rem;
+    border-color:var(--color-primary);
+    border-radius: var(--border-radius);
+    min-width: 270px;
+    width: auto;
+    border-width: 4px;
+
+}
+.Form_input:active{
+    transform: scale(0.98);
+    border-color: var(--color-primary-dark);
+    
+}
+.Form_input:hover{
+    background-color: var(--color-secondary-dark);
+    border-color: var(--color-primary-dark);
+}
+.border-container,
+.form_input,
+.button1 {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+.button2:active{
+    transform: scale(0.99);
+}
+.button2:hover{
+    transform: scale(0.9);
+}
+.bucket{
+
+    align-items: center;
+    justify-content: center;
+    min-width:210px;
+    min-height: 310px;
+    width: auto;
+    height: auto;
+}

@@ -1,10 +1,14 @@
 body{
     padding: 20px;
-    background-image: url('Desktop\ -\ 1\ \(1\).png');
+    background-image: url('Desktop\ -\ 1\ \(1\).png') ;
     justify-content: center;
     background-repeat: no-repeat;
     --color-primary-dark:green;
     background-size: cover;
+    background-attachment: fixed;
+    background-position:center center;
+    min-width: none;
+    min-height: 100vh;
     align-items: center;
 }
 
@@ -12,17 +16,23 @@ body{
     background-image:none;
    
 }
+#ab{
+    padding: 50px 50px 50px 50px ;
+}
 
 #left{
+    min-height: 630px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     border-radius: 30px;
     margin-left: 100px;
     margin-bottom: 50px;
     background-color: #3AB397;
-    padding-right: 200px;
-    padding-top: 200px;
-    padding-left: 200px;
-    padding-bottom: 200px;
+    display: flex;
     text-align: center;
+    flex-direction: column;
 }
 #right{
     border-radius: 30px;
@@ -49,7 +59,7 @@ body{
     position: absolute;
     width: 261px;
     height: 77px;
-   left:320px;
+    top: 700%;
    border: 2px solid #3AB397;
     border-radius: 40px;
     
@@ -84,4 +94,18 @@ button:active{
 }
 button:hover{
 background-color: var(--color-primary-dark);
+}
+
+button{
+    position: absolute;
+}
+
+@media screen AND (max-width:500px ) {
+    body{
+        background-image: url('images.jpg');
+       
+    }
+    nav{
+        display:inline-grid;
+    }
 }
