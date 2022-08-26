@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login_page/login.css">
+    
+    <title>Padi | Login</title>
+    
+  
+</head>
+<body class="responsive1" onload="load()">
+    <div class="border-container">
+      
+        <div class="scrollingimg">
+            <img  style= "max-width:439px;border-radius: 30px;min-height:600px; width: fit-content;" src="welcome.PNG" alt="" srcset="">
+        </div>
+    <div class="bucket">
+        <div class="logincontainer">
+            <form  method="post" class="loginform">
+                <h2>SignUp</h2>
+                
+                <ul>
+                    <li><img class="button2" src="landing_page\FacebookFilled.png" alt="">
+                    <img class="button2" src="landing_page\GooglePlusCircleFilled.png" alt="">
+                    <img class="button2" src="landing_page\Vector.png" alt=""></li>
+                </ul>
+                <h6>signup with email</h6>
+                <div class="input-group">
+                    <div id="details"> <img src="C:\Users\prasanna\Downloads\course website\Rectangle 11.png" alt=""> <a href="">   </a><input type="name" name="name"  class="Form_input" id="nameid" autofocus placeholder="Name" required></div>
+                </div>
+                <div class="input-group">
+                    <div id="details">
+                        <img src="C:\Users\prasanna\Downloads\course website\Rectangle 35.png" alt=""> <a href="">   </a><input type="email" name="email" class="Form_input" required id="emailid" autofocus placeholder="Email">
+                    </div></div>
+            <div class="input-group">
+                <div id="details">
+                    <img src="C:\Users\prasanna\Downloads\course website\icons8-password-24 1.png" alt=""> <a href="">   </a><input type="password" name="pass" class="Form_input" required autocomplete="on" id="passid" autofocus placeholder="password"></div>
+            </div>
+            <div class="input-button">
+                
+                    <input type="button" id="submitdata" name="submitdata" class="button1" value="Next" >
+            </div>
+            </form>
+          
+</div>
+
+</div>
+</td>
+</div>
+
+    
+</body>
+<script type="module">
+        
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
+    const firebaseConfig = {
+apiKey: "AIzaSyC1_EceCFAoFRbZaaJN_q6x6pCAQyEJDzg",
+authDomain: "auther-2f13b.firebaseapp.com",
+databaseURL: "https://auther-2f13b-default-rtdb.firebaseio.com",
+projectId: "auther-2f13b",
+storageBucket: "auther-2f13b.appspot.com",
+messagingSenderId: "104368194065",
+appId: "1:104368194065:web:76803ed61c847ff5bb67b0"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+    submitdata.addEventListener('click', (e) => {
+        
+        var email=document.getElementById('emailid').value;
+        var password=document.getElementById('passid').value;
+        var name=document.getElementById('nameid').value;
+        const auth = getAuth();
+        
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+// Signed in 
+    const user = userCredential.user;
+    alert('user-created');
+    window.location.replace("D:\\Websites\\Websites-main\\login_page\\login.html");
+
+// Simulate an HTTP redirect:
+  
+
+// ...
+})
+.catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+// ..
+    alert(errorMessage);
+});
+});
+</script>
+</html>
