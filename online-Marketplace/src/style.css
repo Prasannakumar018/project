@@ -1,0 +1,25 @@
+.container {
+    padding-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .productList{
+    display: flex;
+    flex-Direction: row;
+    align-Items: center;
+    margin: 0 10px;
+  }
+
+  .image{
+    padding: 100px;
+  }
